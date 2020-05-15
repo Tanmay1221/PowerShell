@@ -18,5 +18,6 @@ foreach($item in $files_present){
     $extentions = $item.Extension.Remove(0,1)
     $directory = "seperated_files\$extentions"
     $start_path = "$item"
+    $item
     Copy-Item $start_path $directory
 }
